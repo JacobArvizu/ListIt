@@ -12,6 +12,6 @@ interface ApiService {
     @GET("/r/all/new.json?limit=300")
     suspend fun getList(): ListObject
 
-    @GET("{post}.json")
+    @GET("{post}/.json")
     suspend fun getComments(@Path("post")post : String): CommentObject
 }
