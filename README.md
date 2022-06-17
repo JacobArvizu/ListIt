@@ -2,8 +2,6 @@
 
 ## Summary
 
-A simple reddit listing app.
-
 Techniques and libraries used:
 
 * Jetpack Compose - Navigation components and Kotlin Extensions (KTX)
