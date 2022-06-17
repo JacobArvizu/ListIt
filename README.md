@@ -1,5 +1,7 @@
 # ListIt
 
+## Summary
+
 A simple reddit listing app.
 
 Techniques and libraries used:
