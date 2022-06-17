@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/MainFragment">
+
+    <fragment
+        android:id="@+id/MainFragment"
+        android:name="com.jarvizu.listit.ui.main.MainFragment"
+        android:label="mainFragmentLabel"
+        tools:layout="@layout/activity_main">
+
+        <action
+            android:id="@+id/actionMainFragment_to_PostFragment"
+            app:destination="@id/PostFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/PostFragment"
+        android:name="com.jarvizu.listit.ui.main.PostFragment"
+        android:label="postFragmentLabel"
+        tools:layout="@layout/fragment_post">
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/MainFragment" />
+        <argument
+            android:name="PostTitle"
+            app:argType="string" />
+        <argument
+            android:name="Sub"
+            app:argType="string" />
+        <argument
+            android:name="Permalink"
+            app:argType="string" />
+        <argument
+            android:name="SelfPost"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+</navigation>
